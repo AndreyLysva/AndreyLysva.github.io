@@ -1,0 +1,490 @@
+/* fonts family */
+font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova_reg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.reg() {
+	font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+/* COLORS */
+@btn-color: #f89f02;
+@icon-color: #70c849;
+@text-color: #1a1820;
+@danger: #red;
+@bg-light: #f5f5f5;
+@light: white;
+@border-input: #dddddd;
+
+
+/* basic setting */
+html{
+	font-size: 9px;
+}
+body{
+	.reg();
+}
+a:hover{
+	text-decoration: none;
+}
+button, input, a, textarea{
+	&:focus{
+		outline: none;
+	}
+}
+.button{
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: @btn-color;
+	color: @light;
+	text-transform: uppercase;
+	border: none;
+	transition: all 0.2s;
+	&:hover{
+		cursor: pointer;
+		background-color: darken(@btn-color, 5%);
+	}
+}
+/* Оформление форм */ 
+.form{
+    /*Поле для ввода*/
+     input, textarea{
+        display: block;
+        margin: 2rem 0;
+        width: 100%;
+        border: 1px solid @border-input;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    /*Подписи к полям*/ 
+    label{
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 1.3rem;
+        background-color: @light;
+        padding: 0.5rem;
+        }
+    /*Кнопка*/
+    &-btn{
+        display: block;
+        height: 5rem;
+        width: 100%;
+        font-size: 1.6rem;
+    }   
+}
+
+/* typography */
+section{
+	padding: 10rem 0;
+}
+.section-header{
+    text-align: center;
+    &_light{
+        margin-bottom: 9rem;
+        color: @light;
+    }
+    h2{
+        font-size: 4rem;
+        .bold()   
+    }
+    p{
+       font-size: 1.7rem; 
+    }
+
+    
+
+}
+
+/* main */
+.main{
+	padding: 3rem 0 5rem;
+	background: #fff url(../img/main-bg.jpg) center center no-repeat;
+	background-size: cover;
+	&-content{
+		margin-top: 10rem;
+/*Главный заголовок*/
+			}
+			h1{
+			margin-top: 0;
+			.bold();
+			font-size: 4rem;
+			line-height: 1.45;
+			text-transform: uppercase;
+               }
+ /*Подзаголовок */
+    &-subtitle{
+    	margin-top: 4rem;
+    	font-size: 2.4rem;
+    }
+    /* Зеленый ярлык */
+    span{
+    	display: inline-block;
+    	margin-top: 4rem;
+    	padding: 3rem 5rem;
+    	font-size: 1.8rem;
+    	color: @light;
+    	background-color: @icon-color;
+    	text-align: center;
+    	/*Цифра 300 */
+    	strong{
+    		font-size: 3rem;
+    		.bold();
+    	}
+        }
+    &-trigger{
+    	display: block;
+    	margin-top: 4rem;
+    	.bold();
+    	font-size: 2rem;
+    	text-transform: uppercase;
+    }    
+    /*Главная форма */
+    &-form {
+    	background-color: @light;
+    	padding: 4rem 5rem;
+    	text-align: center;
+    }
+    &-header{
+    	margin-bottom: 4rem;
+    	font-size: 1.8rem;
+    	strong{
+    		font-size: 2rem;
+    	}
+     }
+     
+
+    /*Подпись под формой*/	
+    small{
+    	font-size: 1.3rem;
+    	display: block;
+    	margin-top: 1.5rem;
+        }
+    }
+        
+
+.header{
+	height: 7rem;
+}
+.wrap{
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-block {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+	}
+}
+.phone{
+	&-block{
+		text-align: right;
+    }
+	&-link{
+	display: inline-block;
+	.bold();
+	font-size: 2rem;
+	height: 7rem;
+	line-height: 7rem;
+	color: @text-color;
+
+}
+}
+
+
+/* Оформление секции */
+
+.features{
+    &-block{
+        margin-top: 10rem;
+        text-align: center;
+        h3{
+            margin-top: 3rem;
+            font-size: 2rem;
+            .bold()
+        }
+        p{
+            display: inline-block;
+            width: 70%;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+
+        }
+    }
+    &-img{
+        img{
+            display: block;
+            margin:0 auto;
+        }
+    }
+}
+.slick-active{
+    outline: none;
+}
+
+/* Cекция с ценами */
+.price{
+   background: @icon-color url(../img/prices/prices_bg.jpg) center;
+   &-block{
+    padding: 1rem 3.6rem 4rem;
+    min-height: 50rem;
+    background-color: @light;
+    text-align: center;
+    box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+    h4{
+        margin: 3rem 0;
+       font-size: 2rem;
+       .bold(); 
+    }
+   }
+   img{
+    display: inline-block;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+   }
+   &-tag{
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    .bold();
+   }
+   &-list{
+    min-height: 14rem;
+    list-style: none;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    li{
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(../img/prices/12.jpg) no-repeat center;
+            vertical-align: middle;    
+        }
+        
+    }
+   }
+   &-button{
+        text-align: right;
+   }
+   
+ }
+
+
+ /* Cомнения */
+.problems{
+    position: relative;
+    background-color: @light;
+    &-girl{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 30rem;
+        margin-left: -19rem;
+    }
+    &-list{
+        margin-bottom: 2rem;
+    }
+    &-list_bad{
+        min-height: 42rem;
+        padding: 5rem 1rem 1rem;
+        border: 2px solid #e8e8e8;
+        h4{
+            margin-bottom: 3rem;
+            padding-left: 3rem;
+            font-size: 2rem;
+            color: #989898;
+            .bold();
+        }
+    }
+    &-variants{
+        font-size: 1.5rem;
+        list-style: none;
+        li{
+            margin-bottom: 4rem;
+            &:before {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(../img/prices/cancel-music.jpg) no-repeat center;
+            vertical-align: middle;
+
+        }
+        }
+    }
+    &-list_good{
+        min-height: 42rem;
+        padding: 5rem 1rem 1rem;
+        border: 2px solid #358015;
+        h4{
+            margin-bottom: 3rem;
+            padding-left: 3rem;
+            font-size: 2rem;
+            color: #313131;
+            .bold();
+        }
+    }
+    &-descions{
+        font-size: 1.5rem;
+        list-style: none;
+        li{
+            margin-bottom: 4rem;
+            &:before {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background: url(../img/prices/12.jpg) no-repeat center;
+            vertical-align: middle;
+
+        }
+        }
+
+    }
+    
+
+
+}
+ 
+.section-header_hopes{
+    margin-bottom: 10rem;
+}
+
+.contacts{
+    background: @light url(../img/bg-footer.jpg) center no-repeat;
+    background-size: cover;
+    h2{
+        font-size: 2.1rem;
+        .bold();
+    }
+    p{
+      font-size: 1.5rem;  
+      margin-top: 2rem;
+      margin-bottom: 3rem;  
+    }
+    
+}
+
+/* footer */
+footer{
+    padding: 4rem 0;
+    .footer{
+        &-contacts{
+        text-align: center;
+        p{
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+        &-dev-logo{
+            text-align: right;
+        }
+    }
+}
+/* Оформление всплывающих окон */
+
+
+
+@media (max-width: 1199px ){
+    .problems{
+        &-list_bad{
+            min-height: 50rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 991px ) {
+   .main{
+    background-position: top right;
+   }
+   .main-content{
+        margin-top: 3rem;
+    }
+    .phone-block{
+        text-align: center;
+    }
+    .main-title{
+        text-align: center;
+    }
+    .price{
+        &-button{
+            text-align: center;
+            padding: 2rem 0;
+        }
+        &-header-btn{
+            margin-top: 1rem;
+        }
+        &-block{
+            margin-top: 1rem;
+        }
+    }
+    .section-header_light{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .problems{
+            &-girl{
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header{
+        text-align: center;
+    }
+    .wrap-block{
+        text-align: center;
+    }
+    .main-content{
+        margin-top: 15rem;
+    }
+    .main-form{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+        .footer{
+            &-contacts{
+            margin: 2rem 0;
+        }
+            &-dev-logo{
+            text-align: center;
+        }
+        }
+    }
+
+
+
+
+     
+    
+}

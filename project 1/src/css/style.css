@@ -1,0 +1,408 @@
+/* fonts family */
+font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* COLORS */
+/* basic setting */
+html {
+  font-size: 9px;
+}
+body {
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #f89f02;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #df8f02;
+}
+/* Оформление форм */
+.form {
+  /*Поле для ввода*/
+  /*Подписи к полям*/
+  /*Кнопка*/
+}
+.form input,
+.form textarea {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.form label {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+.form-btn {
+  display: block;
+  height: 5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+/* typography */
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  text-align: center;
+}
+.section-header_light {
+  margin-bottom: 9rem;
+  color: #ffffff;
+}
+.section-header h2 {
+  font-size: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.section-header p {
+  font-size: 1.7rem;
+}
+/* main */
+.main {
+  padding: 3rem 0 5rem;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+  /*Подзаголовок */
+  /* Зеленый ярлык */
+  /*Главная форма */
+  /*Подпись под формой*/
+}
+.main-content {
+  margin-top: 10rem;
+  /*Главный заголовок*/
+}
+.main h1 {
+  margin-top: 0;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 4rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  margin-top: 4rem;
+  font-size: 2.4rem;
+}
+.main span {
+  display: inline-block;
+  margin-top: 4rem;
+  padding: 3rem 5rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #70c849;
+  text-align: center;
+  /*Цифра 300 */
+}
+.main span strong {
+  font-size: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-trigger {
+  display: block;
+  margin-top: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.main-form {
+  background-color: #ffffff;
+  padding: 4rem 5rem;
+  text-align: center;
+}
+.main-header {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+.main-header strong {
+  font-size: 2rem;
+}
+.main small {
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+.header {
+  height: 7rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-link {
+  display: inline-block;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #1a1820;
+}
+/* Оформление секции */
+.features-block {
+  margin-top: 10rem;
+  text-align: center;
+}
+.features-block h3 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.features-block p {
+  display: inline-block;
+  width: 70%;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+/* Cекция с ценами */
+.price {
+  background: #70c849 url(../img/prices/prices_bg.jpg) center;
+}
+.price-block {
+  padding: 1rem 3.6rem 4rem;
+  min-height: 50rem;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+.price-block h4 {
+  margin: 3rem 0;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.price img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  max-width: 25rem;
+}
+.price-tag {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.price-list {
+  min-height: 14rem;
+  list-style: none;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.price-list li:before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/prices/12.jpg) no-repeat center;
+  vertical-align: middle;
+}
+.price-button {
+  text-align: right;
+}
+/* Cомнения */
+.problems {
+  position: relative;
+  background-color: #ffffff;
+}
+.problems-girl {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30rem;
+  margin-left: -19rem;
+}
+.problems-list {
+  margin-bottom: 2rem;
+}
+.problems-list_bad {
+  min-height: 42rem;
+  padding: 5rem 1rem 1rem;
+  border: 2px solid #e8e8e8;
+}
+.problems-list_bad h4 {
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  color: #989898;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.problems-variants {
+  font-size: 1.5rem;
+  list-style: none;
+}
+.problems-variants li {
+  margin-bottom: 4rem;
+}
+.problems-variants li:before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/prices/cancel-music.jpg) no-repeat center;
+  vertical-align: middle;
+}
+.problems-list_good {
+  min-height: 42rem;
+  padding: 5rem 1rem 1rem;
+  border: 2px solid #358015;
+}
+.problems-list_good h4 {
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  color: #313131;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.problems-descions {
+  font-size: 1.5rem;
+  list-style: none;
+}
+.problems-descions li {
+  margin-bottom: 4rem;
+}
+.problems-descions li:before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/prices/12.jpg) no-repeat center;
+  vertical-align: middle;
+}
+.section-header_hopes {
+  margin-bottom: 10rem;
+}
+.contacts {
+  background: #ffffff url(../img/bg-footer.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h2 {
+  font-size: 2.1rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+/* footer */
+footer {
+  padding: 4rem 0;
+}
+footer .footer-contacts {
+  text-align: center;
+}
+footer .footer-contacts p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+footer .footer-dev-logo {
+  text-align: right;
+}
+/* Оформление всплывающих окон */
+@media (max-width: 1199px) {
+  .problems-list_bad {
+    min-height: 50rem;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .price-button {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .price-header-btn {
+    margin-top: 1rem;
+  }
+  .price-block {
+    margin-top: 1rem;
+  }
+  .section-header_light {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .problems-girl {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 15rem;
+  }
+  .main-form {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer-contacts {
+    margin: 2rem 0;
+  }
+  footer .footer-dev-logo {
+    text-align: center;
+  }
+}
