@@ -1,0 +1,30 @@
+@media screen and (max-width: 992px) {
+	html{
+		font-size: 90%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html{
+		font-size: 75%;
+	}
+	.nav__list{
+		display: none;
+	}
+	.nav__list---open,.nav__btn{
+		display: block;
+	}
+	.nav__link{
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.header-logo,.header-contact{
+		float: none;
+		text-align: center;
+	}
+	.header-contact{
+		padding: 1rem;
+	}
+}
