@@ -1,0 +1,92 @@
+@media screen and (max-width: 1255px){
+	.page__cell{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.page__coupons{
+		max-width: 100%
+	}
+	.page-row__main{
+		max-width: 100%;
+	}
+	.first__line{
+		width: 100%
+	}
+	.second__line{
+		width: 100%;
+	}
+	
+}	
+@media screen and (max-width: 992px){
+	.page__cell{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.page__coupons{
+		max-width: 100%
+	}
+	.page__main-header{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.page__main-content{
+		display: none;
+	}
+	.page-row__main{
+		max-width: 100%;
+	}
+	.first__line{
+		width: 100%
+	}
+	.second__line{
+		width: 100%;
+	}
+	.page__submit{
+		width: 100%;
+		
+
+	}
+	.page__base{
+		max-width: 100%;
+		margin-bottom: 3rem;
+	}
+	.page__harleys{
+		display: flex;
+		flex-direction: column;
+	}
+	.page__email{
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 732px){
+	.page__cell{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.page__coupons{
+		max-width: 100%
+	}
+	
+	.list{
+		display: flex;
+		justify-content: column;
+	}
+	.page__shop-products{
+		display: flex;
+		justify-content: column;
+		text-align: center;
+	}
+	
+}
+}
+@media screen and (max-width: 550px){
+    .page__cell{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.page__coupons{
+		width: 100%
+	}
+
+}
